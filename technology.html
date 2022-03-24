@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/technology.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><img src="/assets/home/logo.svg" alt="logo" /></div>
+        <hr />
+        <div class="nav" id="nav">
+          <div>
+            <h3>00</h3>
+            <a href="home.html">Home</a>
+          </div>
+          <div>
+            <h3>01</h3>
+            <a href="destination.html">Destination</a>
+          </div>
+          <div>
+            <h3>02</h3>
+            <a href="crew.html">Crew</a>
+          </div>
+          <div>
+            <h3>03</h3>
+            <a href="technology.html">Technology</a>
+          </div>
+        </div>
+
+        <!-- side nav -->
+
+        <div class="sidenavcontainer">
+          <div class="backdrop" id="backdrop" onclick="closeNav()"></div>
+
+          <div id="mySidenav" class="sidenav">
+            <a href="home.html">Home</a>
+            <a href="destination.html">Destination</a>
+            <a href="crew.html">Crew</a>
+            <a href="technology.html">Technology</a>
+          </div>
+
+          <span class="hamcontainer" onclick="openNav()" id="ham">
+            <div class="ham1"></div>
+            <div class="ham2"></div>
+            <div class="ham3"></div>
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="no">
+        <h3>03</h3>
+        <h4>SPACE LAUNCH 101</h4>
+      </div>
+
+      <div class="container">
+        <div class="mobile">
+          <img
+            src="/assets/technology/image-launch-vehicle-landscape.jpg"
+            alt=""
+            id="vehMobile"
+          />
+          <img
+            src="/assets/technology/image-spaceport-landscape.jpg"
+            alt=""
+            id="portMobile"
+          />
+          <img
+            src="/assets/technology/image-space-capsule-landscape.jpg"
+            alt=""
+            id="capMobile"
+          />
+        </div>
+
+        <div class="btn">
+          <button onclick="one()" id="no1">1</button>
+          <button onclick="two()" id="no2">2</button>
+          <button onclick="three()" id="no3">3</button>
+        </div>
+
+    
+          <div class="text">
+            <div class="vehicle" id="vehicle">
+              <p>The terminology...</p>
+              <h1>LAUNCH VEHICLE</h1>
+
+              <p>
+                A launch vehicle or carrier rocket is a rocket-propelled,<!--<br>-->
+                vehicle used to carry a payload from Earth's surface to ,<!--<br>-->
+                space, usually to Earth orbit or beyond. Our WEB-X ,<!--<br>-->
+                150 metres tall, it's quite an awe-inspiring sight on the launch
+                pad!
+              </p>
+            </div>
+
+            <div class="spaceport" id="spaceport">
+              <p>The terminology...</p>
+              <h1>SPACEPORT</h1>
+              <p>
+                A spaceport or cosmodrome is a site for launching (or
+                receiving),<!--<br>-->
+                spacecraft, by analogy to the seaport for ships or airport for
+                aircraft.,<!--<br>-->
+                Based in the famous Cape Canaveral, our spaceport is ideally
+                situated to ,<!--<br>-->
+                take advantage of the Earth's rotation for launch.
+              </p>
+            </div>
+
+            <div class="capsule" id="capsule">
+              <p>The terminology...</p>
+              <h1>SPACE CAPSULE</h1>
+              <p>
+                A launch vehicle or carrier rocket is a rocket-propelled,<!--<br>-->
+                Space capsule A space capsule is an often-crewed spacecraft that
+                ,<!--<br>-->
+                uses a blunt-body reentry capsule to reenter the Earth's
+                atmosphere,<!--<br>-->
+                without wings. Our capsule is where you'll spend your time
+                during the flight.,<!--<br>-->
+                It includes a space gym, cinema, and plenty of other activities
+                to keep you entertained.
+              </p>
+            </div>
+          </div>
+          <div class="img" id="img">
+            <img
+              src="/assets/technology/image-launch-vehicle-portrait.jpg"
+              alt=""
+              id="veh"
+            />
+            <img
+              src="/assets/technology/image-spaceport-portrait.jpg"
+              alt=""
+              id="port"
+            />
+            <img
+              src="/assets/technology/image-space-capsule-portrait.jpg"
+              alt=""
+              id="cap"
+            />
+          </div>
+        
+      </div>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>

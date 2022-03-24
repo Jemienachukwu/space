@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/destination.css">
+<!--     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> <img src="/assets/home/logo.svg" alt="logo"> </div>
+            <hr>
+            <div class="nav">
+               <div> <h3>00</h3><a href="home.html">Home</a></div>
+               <div> <h3>01</h3> <a href="destination.html">Destination</a></div>
+               <div> <h3>02</h3><a href="crew.html">Crew</a></div>
+               <div> <h3>03</h3> <a href="technology.html">Technology</a></div>
+            </div>
+
+              <!-- side nav -->
+        <div class="sidenavcontainer">
+            <div class="backdrop" id="backdrop" onclick="closeNav()"></div>
+  
+            <div id="mySidenav" class="sidenav">
+              <a href="home.html">Home</a>
+              <a href="destination.html">Destination</a>
+              <a href="crew.html">Crew</a>
+              <a href="technology.html">Technology</a>
+            </div>
+  
+            <span class="hamcontainer" onclick="openNav()" id="ham">
+              <div class="ham1"></div>
+              <div class="ham2"></div>
+              <div class="ham3"></div>
+            </span>
+          </div>
+        </nav>
+
+    </header>
+    <main>
+    <div class="planet">
+        <div class="right">
+            <div class="no">
+                <h4>01</h4>
+                <h3>PICK YOUR DESTINATION </h3>
+            </div>
+            <div class="hideimg">
+                <img src="/assets/destination/image-moon.webp" alt="" id="imgmoon" class="imgmoon">
+                <img src="/assets/destination/image-mars.webp" alt="" id="imgmars" class="imgmars">
+                <img src="/assets/destination/image-europa.webp" alt="" id="imgeuropa" class="imgeuropa">
+                <img src="/assets/destination/image-titan.webp" alt="" id="imgtitan" class="imgtitan"> 
+            </div>
+
+        </div>
+        
+       <div class="content">
+            <div class="hangnav" id="han">
+                <nav>
+                    <a href="#" onclick="btnmoon()" id="moon" class="moon">MOON</a>
+                    <a href="#" onclick="btnmars()" id="mars" class="mars" >MARS</a>
+                    <a href="#"  onclick="btneuropa()" id="europa" class="europa">EUROPA<a>
+                    <a href="#" onclick="btntitan()" id="titan" class="titan">TITAN</a>
+                </nav>
+            </div>
+    
+            <div class="hide">
+                <div id="changeMoon" class="changemoon" style="display: block;">
+                    <H1 class="moon" >MOON</H1>
+                    <p>
+
+                        See our planet as you,ve never seen it before. A perfect relaxing trip away
+                        help regain perspective and come back refreshed. While you,re
+                        there, take in some history by visiting the Luna 2 and  Apollo 11 landing site
+                       
+                    </p>
+    
+                    <hr>
+                    <div class="below">
+                        <div class="avg">
+                            <P>AVG. DISTANCE</P>
+                            <h3>384,400 KM</h3>   
+                        </div>
+                            
+                        <div class="est">
+                            <p>EST. TRAVEL TIME</p>
+                            <h3>3 DAYS</h3>
+                        </div>
+                    </div>
+                </div>
+    
+                 <div class="changeMars" id="changeMars">
+                    <h1 class="mars">MARS</h1>
+    
+                    <P>
+                        Don't forget to pack your hiking boots, you'll need them to tackle Olympus
+                        the tallest planetary mountain in our solar system. it's two and
+                        half times the size of Everest!
+                    </P>
+    
+                    <hr>
+                    <div class="below">
+                        <div class="avg">
+                            <P>AVG. DISTANCE</P>
+                            <h3>225 MIL. KM</h3>   
+                        </div>
+                            
+                        <div class="est">
+                            <p>EST. TRAVEL TIME</p>
+                            <h3>9 MONTHS</h3>
+                        </div>
+                    </div>
+                </div> 
+    
+                <div class="changeEuropa" id="changeEuropa">
+                    <h1 class="europa">EUROPA</h1>
+    
+                    <P>
+                        
+
+                        The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter
+                        lover's dream. With an icy surface,it's perfect for a bit of skating, curling,    
+                        hockey,or simple relaxation in your snug wintery cabin.
+                    </P>
+    
+                    <hr>
+                    <div class="below">
+                        <div class="avg">
+                            <P>AVG. DISTANCE</P>
+                            <h3>628 MIL .KM </h3>   
+                        </div>
+                            
+                        <div class="est">
+                            <p>EST. TRAVEL TIME</p>
+                            <h3>3 YEARS</h3>
+                        </div>
+                    </div>
+                </div> 
+    
+                <div class="changeTitan" id="changeTitan">
+                    <h1 class="titan">TITAN</h1>
+    
+                    <P>
+                        See our planet as you,ve never seen it before. A perfect relaxing trip Th
+                        only moon known to have a dense atmosphere other than Earth,Titan is 
+                        home away from home (just a few hundred degrees colder!) As a bonus,
+                        you get striking views of the Rings of Saturn.
+                    </P>
+    
+                    <hr>
+                    <div class="below">
+                        <div class="avg">
+                            <P>AVG. DISTANCE</P>
+                            <h3>628 MIL .KM </h3>   
+                        </div>
+                            
+                        <div class="est">
+                            <p>EST. TRAVEL TIME</p>
+                            <h3>3 YEARS</h3>
+                        </div>
+                    </div>
+                </div> 
+    
+            </div>
+ 
+
+         </div>
+    </div>
+
+
+    </main>
+    <script src="index.js"></script>    
+</body>
+</html>
