@@ -92,16 +92,16 @@ main {
 }
 
 /*explore button*/
-button {
+.explore-btn {
   background-color: white;
-  height: 20vh;
-  width: 20vw;
+  height: 200px;
+  width: 200px;
   border: none;
   border-radius: 50%;
   padding: auto;
   cursor: pointer;
 }
-button a {
+.main a {
   text-decoration: none;
   color: black;
   font-weight: 700;
@@ -211,7 +211,7 @@ button a {
     margin-top: 5em;
   }
 
-  button {
+  .explore-btn {
     height: 10em;
     width: 10em;
     z-index: 2;
